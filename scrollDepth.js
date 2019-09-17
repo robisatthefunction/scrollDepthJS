@@ -1,4 +1,5 @@
-function getDocHeight() {
+document.addEventListener('DOMContentLoaded', function(event) {
+  function getDocHeight() {
     var D = document;
     return Math.max(
         D.body.scrollHeight, D.documentElement.scrollHeight,
@@ -21,3 +22,4 @@ function amountscrolled(){
 window.addEventListener("scroll", function(){
     amountscrolled();
 }, false);
+});
